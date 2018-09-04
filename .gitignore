@@ -129,4 +129,10 @@ lib-cov
 *.log
 *.out
 *.pid
-yarn.lock
+
+#snapshot folder
+__snapshots__
+
+# lock files
+*.lock
+*.lock.json

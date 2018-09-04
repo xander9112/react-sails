@@ -185,14 +185,14 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     // adapter: '@sailshq/connect-redis',
-    // url: 'redis://user:password@localhost:6379/databasenumber',
+    // url: 'redis://user:password@localhost:6379/dbname',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
     // For example:
     // ```
-    // sails_session__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/0
+    // sails_session__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/sessions
     // ```
     //
     //--------------------------------------------------------------------------
@@ -269,14 +269,14 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     // adapter: '@sailshq/socket.io-redis',
-    // url: 'redis://user:password@bigsquid.redistogo.com:9562/databasenumber',
+    // url: 'redis://user:password@bigsquid.redistogo.com:9562/dbname',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
     // For example:
     // ```
-    // sails_sockets__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/0
+    // sails_sockets__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/
     // ```
     //--------------------------------------------------------------------------
 

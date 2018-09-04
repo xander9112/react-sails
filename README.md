@@ -1,4 +1,4 @@
-# react-sails
+# sails-react-webpack-4
 
 a [Sails v1](https://sailsjs.com) application
 
@@ -15,9 +15,9 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
-This app was originally generated on Wed Aug 01 2018 21:31:28 GMT+0300 (MSK) using Sails v1.0.2.
+This app was originally generated on Sat Apr 07 2018 09:59:19 GMT-0600 (Hora estándar, América Central) using Sails v1.0.0.
 
-<!-- Internally, Sails used [`sails-generate@1.15.28`](https://github.com/balderdashy/sails-generate/tree/v1.15.28/lib/core-generators/new). -->
+<!-- Internally, Sails used [`sails-generate@1.15.19`](https://github.com/balderdashy/sails-generate/tree/v1.15.19/lib/core-generators/new). -->
 
 
 

@@ -1,13 +1,17 @@
+import webpack from 'webpack';
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const precss = require('precss');
 const autoprefixer = require('autoprefixer');
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
-  entry: {
-    entry: './client/js/index.js'
-  },
+  mode: 'development',
+  devtool: 'source-map',
+  entry: [
+    './client/js/index.js',
+    'webpack-hot-middleware/client?reload=true'
+  ],
   output: {
     path: path.join(__dirname, '/.tmp/public'),
     filename: 'bundle.js',
@@ -51,20 +55,22 @@ module.exports = {
           name: 'media/[name].[hash:8].[ext]'
         }
       },
+      // "file" loader makes sure assets end up in the `build` folder.
+      // When you `import` an asset, you get its filename.
       {
         loader: 'file-loader',
-        test: [/\.eot$/, /\.ttf$/, /\.svg$/, /\.woff$/, /\.woff2$/, /\.png$/],
+        test: [/\.eot$/, /\.ttf$/, /\.svg$/, /\.woff$/, /\.woff2$/],
         options: {
           name: 'media/[name].[hash:8].[ext]'
         }
-
       }
     ]
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'views/pages/homepage-webpack.ejs'
-    })
+      template: 'client/index.html'
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };

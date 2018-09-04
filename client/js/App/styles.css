@@ -1,0 +1,26 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #fff !important;
+  font-family: Roboto;
+}
+
+::selection{
+  background-color: #C62828 !important;
+  color: #fff !important;
+}
+
+#root{
+  height: calc(100% - 200px);
+}
+
+.head-content{
+  width: 100%;
+  height: 200px;
+  background: #000;
+  text-align: center;
+  font-size: 150px;
+  color: #fff;
+  padding-top: 15px;
+}
